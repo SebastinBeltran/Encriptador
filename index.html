@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="contenedor1">
+            <section class="encriptar">
+                <textarea name="texto" id="texto" placeholder="Ingresa el texto aquí" cols="30" rows="10"></textarea>
+            </section>
+            <section class="terminos">
+                <p>solo letras minusculas y sin acentos</p>
+            </section>
+            <section class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </section>
+        </div>
+        <div class="encriptado">
+            <img src="img/lupa.jpg" alt="" id="fondo">
+            <div class="mensaje_encriptado">
+                <h2 id="mensaje_encriptado">Sistema de Encriptado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea name="texto2" id="texto2" style="display: none;"></textarea>
+                <button class="btn-copy" type="button" onclick="copiar()" style="display: none;">Copiar</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="scrip.js"></script>
+</html>
